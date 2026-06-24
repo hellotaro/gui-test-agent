@@ -1,0 +1,25 @@
+{
+  "name": "gui-test-agent",
+  "version": "1.0.0",
+  "description": "agent for gui test",
+  "homepage": "https://github.com/hellotaro/gui-test-agent#readme",
+  "bugs": {
+    "url": "https://github.com/hellotaro/gui-test-agent/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellotaro/gui-test-agent.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "client.js",
+  "scripts": {
+    "start": "node client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "@modelcontextprotocol/sdk": "latest"
+  }
+}
