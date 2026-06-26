@@ -11,3 +11,50 @@
 ```
 ANTHROPIC_API_KEY=<API KEY>
 ```
+
+# 実行
+以下コマンドにより、対話的コマンド実行環境が立ち上がる。
+
+```
+npm start
+```
+
+実行できるコマンドは以下である。（上記コマンド実行後にhelpとして表示される）
+
+- auto "<goal>" [url]
+    - AIエージェントモード。DOMを見てClaudeで操作シナリオを生成し、そのまま実行する。
+- run <scenario> [url]
+    - シナリオ実行
+- cache list
+    - DOMキャッシュ一覧
+- cache show <path>
+    - DOMキャッシュ内容表示
+- cache frames <path>
+    - DOMキャッシュ内の iframe 一覧を表示
+- gen <path> <name> [--run]
+    - DOMからシナリオ生成
+- ask "<question>"
+    - Claudeに質問
+- ask-dom <path> "<question>"
+    - DOMを元にClaudeへ質問
+- improve <file>
+    - シナリオ改善
+- scenarios
+    - シナリオ一覧
+- history
+    - 実行済みステップ一覧
+- history clear
+    - セッション履歴をクリア
+- history delete <index>
+    - indexで指定されたhistoryを削除
+- save-scenario <name>
+    - セッション履歴からシナリオ生成
+- merge-scenario <file>
+    - opsidb.jsonへシナリオをマージ
+- help
+    - ヘルプ表示
+- quit
+    - 終了
+
+
+
